@@ -25,6 +25,9 @@ async function pagedGet(
   pageSize = 100,
   aggregatedResponse = null
 ) {
+    
+  console.log("pagedGet", typeof pageSize, pageSize)
+    
   const mergedOptions = Object.assign(
     {
       lang: '*',
